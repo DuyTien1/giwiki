@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Genshin Impact Wiki</title>
+		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="styles/animations.css" />
+	</head>
+	<body>
+		<!-- Navigation -->
+		<nav class="nav-wrapper">
+			<div class="logo">
+				<a href="./index.html" class="logo-link" style="text-decoration: none">
+					<img
+						src="./assets/images/logo.png"
+						alt="Genshin Impact Logo"
+						class="logo-img"
+						loading="eager"
+						width="40"
+						height="40"
+					/>
+					<span class="logo-text">
+						<span class="logo-text-main">Wiki</span>
+						<span class="logo-text-accent">Guide</span>
+					</span>
+				</a>
+			</div>
+			<ul class="nav-links">
+				<li><a href="#awards">Awards</a></li>
+				<li><a href="#highlights">Highlights</a></li>
+				<li><a href="#characters">Characters</a></li>
+				<li><a href="#blog">Blog</a></li>
+				<li><a href="#character-archive">Archive</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+			</ul>
+			<div class="search-bar">
+				<div class="search-wrapper">
+					<i class="search-icon">🔍</i>
+					<input type="text" placeholder="Search All..." />
+					<button class="search-btn">Search</button>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<header class="hero">
+			<div class="hero-overlay"></div>
+			<video class="hero-video" autoplay muted loop playsinline>
+				<source src="./assets/videos/genshin-trailer.mp4" type="video/mp4" />
+			</video>
+			<div class="hero-content">
+				<h1>Welcome to Teyvat</h1>
+				<p class="hero-subtitle">Explore the vast world of Genshin Impact</p>
+				<div class="hero-description">
+					<p>
+						Embark on an epic journey across seven distinct nations, each blessed by a different
+						element and ruled by their respective Archons. In this vast open world, uncover the
+						mysteries of your lost sibling, master the art of elemental combat, and discover
+						countless stories waiting to be told.
+					</p>
+					<div class="world-stats">
+						<div class="stat-item">
+							<span class="stat-number">7</span>
+							<span class="stat-label">Unique Nations</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-number">4</span>
+							<span class="stat-label">Major Regions</span>
+						</div>
+						<div class="stat-item">
+							<span class="stat-number">50+</span>
+							<span class="stat-label">Characters</span>
+						</div>
+					</div>
+					<div class="cta-buttons">
+						<a href="#regions" class="cta-btn primary">Explore Regions</a>
+						<a href="#characters" class="cta-btn secondary">Meet Characters</a>
+					</div>
+				</div>
+			</div>
+			<div class="scroll-indicator">
+				<span class="scroll-text">Scroll to explore</span>
+				<div class="scroll-arrow">↓</div>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main>
+			<section id="awards" class="section awards-section">
+				<div class="awards-container">
+					<h2>Award-Winning Adventure</h2>
+					<div class="awards-grid">
+						<div class="award-card">
+							<div class="award-icon">🏆</div>
+							<h3>Apple Design Award 2021</h3>
+							<p>Winner of Innovation in Games category</p>
+						</div>
+						<div class="award-card">
+							<div class="award-icon">🌟</div>
+							<h3>Google Play Best of 2020</h3>
+							<p>Best Game of 2020</p>
+						</div>
+						<div class="award-card">
+							<div class="award-icon">🎮</div>
+							<h3>TapTap Awards</h3>
+							<p>Game of the Year 2020</p>
+						</div>
+						<div class="award-card">
+							<div class="award-icon">💫</div>
+							<h3>Japan Game Awards</h3>
+							<p>Award for Excellence 2021</p>
+						</div>
+					</div>
+					<div class="achievements">
+						<div class="achievement-stat">
+							<span class="achievement-number">$3.7B+</span>
+							<span class="achievement-label">Revenue in First Year</span>
+						</div>
+						<div class="achievement-stat">
+							<span class="achievement-number">60M+</span>
+							<span class="achievement-label">Downloads Worldwide</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="highlights" class="section highlights-section">
+				<div class="highlights-container">
+					<h2>Why Genshin Impact Stands Out</h2>
+					<div class="highlights-grid">
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/world.png" alt="Open World" class="feature-icon" />
+							</div>
+							<h3>Breathtaking Open World</h3>
+							<p>
+								Experience a vast seamless world with no loading screens, featuring stunning
+								anime-inspired visuals and dynamic weather systems that surpass other gacha games.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/combat.png" alt="Combat" class="feature-icon" />
+							</div>
+							<h3>Revolutionary Combat System</h3>
+							<p>
+								Master unique elemental reactions and team combinations with the innovative combat
+								system that blends action RPG mechanics with strategic element mixing.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/story.png" alt="Story" class="feature-icon" />
+							</div>
+							<h3>Rich Storytelling</h3>
+							<p>
+								Immerse yourself in a deep, evolving narrative with fully voiced cutscenes in
+								multiple languages, setting new standards for mobile gaming.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img
+									src="assets/icons/cross-platform.png"
+									alt="Cross Platform"
+									class="feature-icon"
+								/>
+							</div>
+							<h3>True Cross-Platform Experience</h3>
+							<p>
+								Play seamlessly across PC, mobile, and consoles with complete cross-save
+								functionality - a rare feature in free-to-play games.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/music.png" alt="Music" class="feature-icon" />
+							</div>
+							<h3>Award-Winning Soundtrack</h3>
+							<p>
+								Features a live orchestral soundtrack with region-specific themes, earning multiple
+								music awards and setting new benchmarks for game audio.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/updates.png" alt="Updates" class="feature-icon" />
+							</div>
+							<h3>Regular Content Updates</h3>
+							<p>
+								Enjoy frequent updates every 6 weeks with new areas, events, and stories - offering
+								more consistent content than typical gacha games.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/community.png" alt="Community" class="feature-icon" />
+							</div>
+							<h3>Vibrant Community</h3>
+							<p>
+								Join millions of active players worldwide in a friendly community, sharing guides,
+								artwork, and participating in regular events and discussions.
+							</p>
+						</div>
+
+						<div class="highlight-card">
+							<div class="highlight-icon">
+								<img src="assets/icons/exploration.png" alt="Exploration" class="feature-icon" />
+							</div>
+							<h3>Rewarding Exploration</h3>
+							<p>
+								Discover hidden treasures, solve intricate puzzles, and uncover secrets in every
+								corner of Teyvat with a robust reward system for explorers.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="characters" class="section">
+				<h2>Featured Characters</h2>
+				<div class="character-slider-container">
+					<div class="character-slider">
+						<div class="character-slide">
+							<img src="./assets/characters/raidenshogun.jpg" alt="Raiden Shogun" />
+							<div class="character-info">
+								<div class="character-element electro">
+									<img src="./assets/elements/eletro.png" alt="Electro" />
+								</div>
+								<h3>Raiden Shogun</h3>
+								<p class="character-title">The Electro Archon</p>
+							</div>
+						</div>
+						<div class="character-slide">
+							<img src="./assets/characters/zhongli.jpg" alt="Zhongli" />
+							<div class="character-info">
+								<div class="character-element geo">
+									<img src="./assets/elements/geo.png" alt="Geo" />
+								</div>
+								<h3>Zhongli</h3>
+								<p class="character-title">The Geo Archon</p>
+							</div>
+						</div>
+						<div class="character-slide">
+							<img src="./assets/characters/nahida.jpg" alt="Nahida" />
+							<div class="character-info">
+								<div class="character-element dendro">
+									<img src="./assets/elements/dendro.png" alt="Dendro" />
+								</div>
+								<h3>Nahida</h3>
+								<p class="character-title">The Dendro Archon</p>
+							</div>
+						</div>
+						<div class="character-slide">
+							<img src="./assets/characters/ayaka.jpg" alt="Kamisato Ayaka" />
+							<div class="character-info">
+								<div class="character-element cryo">
+									<img src="./assets/elements/hydro.png" alt="Cryo" />
+								</div>
+								<h3>Kamisato Ayaka</h3>
+								<p class="character-title">Frostflake Heron</p>
+							</div>
+						</div>
+						<div class="character-slide">
+							<img src="./assets/characters/hutao.jpg" alt="Hu Tao" />
+							<div class="character-info">
+								<div class="character-element pyro">
+									<img src="./assets/elements/pyro.png" alt="Pyro" />
+								</div>
+								<h3>Hu Tao</h3>
+								<p class="character-title">77th Director of the Wangsheng Funeral Parlor</p>
+							</div>
+						</div>
+					</div>
+					<div class="slider-dots"></div>
+				</div>
+			</section>
+
+			<section id="blog" class="section blog-section">
+				<div class="blog-container">
+					<h2>Latest Updates & Guides</h2>
+
+					<div class="blog-categories">
+						<button class="category-btn active" data-category="all">All</button>
+						<button class="category-btn" data-category="news">Latest News</button>
+						<button class="category-btn" data-category="guides">Beginner Guides</button>
+						<button class="category-btn" data-category="builds">Character Builds</button>
+					</div>
+
+					<div class="blog-grid">
+						<!-- Latest News -->
+						<article class="blog-card news">
+							<div class="blog-image">
+								<img src="./assets/blog/version-update.jpg" alt="Version 4.5 Update" />
+								<span class="blog-tag">News</span>
+							</div>
+							<div class="blog-content">
+								<h3>Version 4.5 Update: New Character Chiori</h3>
+								<p class="blog-date">March 13, 2024</p>
+								<p class="blog-excerpt">
+									Explore the latest update featuring the new 5-star Geo character Chiori and
+									exciting events in Fontaine...
+								</p>
+								<a href="#" class="read-more">Read More →</a>
+							</div>
+						</article>
+
+						<!-- Beginner Guide -->
+						<article class="blog-card guides">
+							<div class="blog-image">
+								<img src="./assets/blog/beginner-guide.jpg" alt="Beginner's Guide" />
+								<span class="blog-tag">Guide</span>
+							</div>
+							<div class="blog-content">
+								<h3>Complete Beginner's Guide 2024</h3>
+								<p class="blog-date">Updated: March 15, 2024</p>
+								<p class="blog-excerpt">
+									Everything you need to know to start your journey in Teyvat, from basic mechanics
+									to resource management...
+								</p>
+								<a href="#" class="read-more">Read More →</a>
+							</div>
+						</article>
+
+						<!-- Character Build -->
+						<article class="blog-card builds">
+							<div class="blog-image">
+								<img src="./assets/blog/raiden-build.jpg" alt="Raiden Shogun Build" />
+								<span class="blog-tag">Build</span>
+							</div>
+							<div class="blog-content">
+								<h3>Raiden Shogun: Complete Build Guide</h3>
+								<p class="blog-date">Updated: March 10, 2024</p>
+								<p class="blog-excerpt">
+									Optimal artifacts, weapons, and team compositions for the Electro Archon...
+								</p>
+								<a href="#" class="read-more">Read More →</a>
+							</div>
+						</article>
+
+						<!-- Quick Tips -->
+						<article class="blog-card guides">
+							<div class="blog-image">
+								<img src="./assets/blog/daily-tips.jpg" alt="Daily Tasks Guide" />
+								<span class="blog-tag">Guide</span>
+							</div>
+							<div class="blog-content">
+								<h3>Daily Tasks Optimization Guide</h3>
+								<p class="blog-date">March 8, 2024</p>
+								<p class="blog-excerpt">
+									Maximize your daily rewards and progress with this efficient routine guide...
+								</p>
+								<a href="#" class="read-more">Read More →</a>
+							</div>
+						</article>
+
+						<!-- Add these two new articles -->
+						<article class="blog-card builds">
+							<div class="blog-image">
+								<img src="./assets/blog/ayaka-build.jpg" alt="Ayaka Build Guide" />
+								<span class="blog-tag">Build</span>
+							</div>
+							<div class="blog-content">
+								<h3>Kamisato Ayaka: Freeze Team Guide</h3>
+								<p class="blog-date">Updated: March 12, 2024</p>
+								<p class="blog-excerpt">
+									Master the art of Cryo DPS with our comprehensive Ayaka build guide, including
+									best team compositions and rotation strategies...
+								</p>
+								<a href="#" class="read-more">Read More →</a>
+							</div>
+						</article>
+
+						<article class="blog-card news">
+							<div class="blog-image">
+								<img src="./assets/blog/event-guide.jpg" alt="Current Events" />
+								<span class="blog-tag">News</span>
+							</div>
+							<div class="blog-content">
+								<h3>Current Events Guide: Windblume Festival</h3>
+								<p class="blog-date">March 14, 2024</p>
+								<p class="blog-excerpt">
+									Complete guide to all ongoing events, rewards, and how to maximize your primogem
+									earnings during the festival...
+								</p>
+								<a href="#" class="read-more">Read More →</a>
+							</div>
+						</article>
+					</div>
+
+					<!-- Newsletter Signup -->
+					<div class="newsletter-container">
+						<h3>Stay Updated</h3>
+						<p>Subscribe to receive the latest guides and updates!</p>
+						<form class="newsletter-form">
+							<input type="email" placeholder="Enter your email" required />
+							<button type="submit">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</section>
+
+			<section id="character-archive" class="section character-archive-section">
+				<div class="archive-container">
+					<h2>Character Archive</h2>
+
+					<div class="filter-controls">
+						<div class="element-filters">
+							<button class="filter-btn active" data-element="all">All</button>
+							<button class="filter-btn" data-element="pyro">
+								<img src="./assets/elements/pyro.png" alt="Pyro" class="element-icon" />
+								Pyro
+							</button>
+							<button class="filter-btn" data-element="hydro">
+								<img src="./assets/elements/hydro.png" alt="Hydro" class="element-icon" />
+								Hydro
+							</button>
+							<button class="filter-btn" data-element="anemo">
+								<img src="./assets/elements/anemo.png" alt="Anemo" class="element-icon" />
+								Anemo
+							</button>
+							<button class="filter-btn" data-element="electro">
+								<img src="./assets/elements/electro.png" alt="Electro" class="element-icon" />
+								Electro
+							</button>
+							<button class="filter-btn" data-element="dendro">
+								<img src="./assets/elements/dendro.png" alt="Dendro" class="element-icon" />
+								Dendro
+							</button>
+							<button class="filter-btn" data-element="cryo">
+								<img src="./assets/elements/cryo.png" alt="Cryo" class="element-icon" />
+								Cryo
+							</button>
+							<button class="filter-btn" data-element="geo">
+								<img src="./assets/elements/geo.png" alt="Geo" class="element-icon" />
+								Geo
+							</button>
+						</div>
+					</div>
+
+					<div class="character-cards-container">
+						<button class="scroll-btn scroll-left">❮</button>
+						<div class="character-cards">
+							<!-- Cards will be populated by JavaScript -->
+						</div>
+						<button class="scroll-btn scroll-right">❯</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- Add these sections before the footer -->
+			<section id="about" class="section about-section">
+				<div class="about-container">
+					<h2>About Us</h2>
+					<div class="about-content">
+						<div class="about-image">
+							<img src="./assets/about/team-banner.jpg" alt="Our Team" />
+						</div>
+						<div class="about-text">
+							<h3>Dedicated to the Genshin Community</h3>
+							<p>
+								Welcome to the premier Genshin Impact Wiki, created by passionate players for the
+								community. Our team of dedicated contributors works tirelessly to provide accurate,
+								up-to-date information about everything Teyvat has to offer.
+							</p>
+
+							<div class="about-stats">
+								<div class="stat-box">
+									<span class="stat-number">10K+</span>
+									<span class="stat-label">Daily Visitors</span>
+								</div>
+								<div class="stat-box">
+									<span class="stat-number">5K+</span>
+									<span class="stat-label">Wiki Articles</span>
+								</div>
+								<div class="stat-box">
+									<span class="stat-number">100+</span>
+									<span class="stat-label">Contributors</span>
+								</div>
+							</div>
+
+							<div class="team-values">
+								<div class="value-item">
+									<div class="value-icon">🎯</div>
+									<h4>Accuracy</h4>
+									<p>All information is thoroughly verified and updated regularly</p>
+								</div>
+								<div class="value-item">
+									<div class="value-icon">🤝</div>
+									<h4>Community First</h4>
+									<p>Built by the community, for the community</p>
+								</div>
+								<div class="value-item">
+									<div class="value-icon">⚡</div>
+									<h4>Fast Updates</h4>
+									<p>Latest game content added within hours of release</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="section contact-section">
+				<div class="contact-container">
+					<h2>Contact</h2>
+					<div class="contact-content">
+						<div class="contact-info">
+							<h3>Get in Touch</h3>
+							<p>Have questions, suggestions, or want to contribute? We'd love to hear from you!</p>
+
+							<div class="contact-methods">
+								<div class="contact-method">
+									<div class="method-icon">📧</div>
+									<h4>Email Us</h4>
+									<p>support@genshinwiki.com</p>
+								</div>
+								<div class="contact-method">
+									<div class="method-icon">💬</div>
+									<h4>Discord</h4>
+									<p>Join our community</p>
+									<a href="#" class="discord-btn">Join Discord</a>
+								</div>
+								<div class="contact-method">
+									<div class="method-icon">🌐</div>
+									<h4>Social Media</h4>
+									<div class="social-links">
+										<a href="#" class="social-link">Twitter</a>
+										<a href="#" class="social-link">Facebook</a>
+										<a href="#" class="social-link">Instagram</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="contact-form-container">
+							<form class="contact-form">
+								<div class="form-group">
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" required />
+								</div>
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" required />
+								</div>
+								<div class="form-group">
+									<label for="subject">Subject</label>
+									<select id="subject" name="subject" required>
+										<option value="">Select a topic</option>
+										<option value="suggestion">Suggestion</option>
+										<option value="contribution">Contribution</option>
+										<option value="report">Report Error</option>
+										<option value="other">Other</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="message">Message</label>
+									<textarea id="message" name="message" rows="5" required></textarea>
+								</div>
+								<button type="submit" class="submit-btn">Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-content">
+				<div class="footer-grid">
+					<div class="footer-section">
+						<div class="footer-logo">
+							<div class="logo">
+								<a href="./index.html" class="logo-link" style="text-decoration: none">
+									<img
+										src="./assets/images/logo.png"
+										alt="Genshin Impact Logo"
+										class="logo-img"
+										loading="eager"
+										width="40"
+										height="40"
+									/>
+									<span class="logo-text">
+										<span class="logo-text-main">Wiki</span>
+										<span class="logo-text-accent">Guide</span>
+									</span>
+								</a>
+							</div>
+						</div>
+						<p class="footer-description">
+							Your ultimate source for Genshin Impact guides, character builds, and game
+							information.
+						</p>
+						<div class="footer-social">
+							<a href="#" class="social-icon" title="Twitter">
+								<i>🐦</i>
+							</a>
+							<a href="#" class="social-icon" title="Discord">
+								<i>💬</i>
+							</a>
+							<a href="#" class="social-icon" title="YouTube">
+								<i>📺</i>
+							</a>
+							<a href="#" class="social-icon" title="Reddit">
+								<i>👽</i>
+							</a>
+						</div>
+					</div>
+
+					<div class="footer-section">
+						<h3>Quick Links</h3>
+						<ul class="footer-links">
+							<li><a href="#characters">Characters</a></li>
+							<li><a href="#weapons">Weapons</a></li>
+							<li><a href="#artifacts">Artifacts</a></li>
+							<li><a href="#regions">Regions</a></li>
+							<li><a href="#quests">Quests</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-section">
+						<h3>Guides</h3>
+						<ul class="footer-links">
+							<li><a href="#beginner">Beginner Guide</a></li>
+							<li><a href="#builds">Character Builds</a></li>
+							<li><a href="#farming">Farming Routes</a></li>
+							<li><a href="#events">Current Events</a></li>
+							<li><a href="#tips">Tips & Tricks</a></li>
+						</ul>
+					</div>
+
+					<div class="footer-section">
+						<h3>Community</h3>
+						<ul class="footer-links">
+							<li><a href="#about">About Us</a></li>
+							<li><a href="#contact">Contact</a></li>
+							<li><a href="#contribute">Contribute</a></li>
+							<li><a href="#privacy">Privacy Policy</a></li>
+							<li><a href="#terms">Terms of Use</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer-bottom">
+					<div class="copyright">
+						<p>© 2024 Genshin Impact Wiki. Fan-made content.</p>
+						<p class="disclaimer">
+							Genshin Impact™ is a registered trademark of HoYoverse. This site is not affiliated
+							with or endorsed by HoYoverse.
+						</p>
+					</div>
+					<div class="footer-bottom-links">
+						<a href="#privacy">Privacy</a>
+						<span class="separator">|</span>
+						<a href="#terms">Terms</a>
+						<span class="separator">|</span>
+						<a href="#cookies">Cookies</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Add this before </body> -->
+		<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
+			<span class="arrow-up">↑</span>
+		</button>
+
+		<script src="js/main.js"></script>
+		<script src="js/animations.js"></script>
+	</body>
+</html>
