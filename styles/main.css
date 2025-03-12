@@ -243,7 +243,7 @@ body {
 
 .hero-subtitle {
 	font-size: 1.8rem;
-	margin-bottom: 2rem;
+	/* margin-bottom: 2rem; */
 	color: #ffffff;
 	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 	animation: fadeInUp 1s ease-out 0.3s both;
@@ -2237,4 +2237,8 @@ body {
 /* Adjust content spacing */
 .contact-content {
 	margin-top: 3rem;
+}
+
+.scroll-indicator {
+	visibility: hidden;
 }
