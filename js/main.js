@@ -277,9 +277,11 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+// Mobile Menu Handler
 document.addEventListener("DOMContentLoaded", function () {
 	const hamburger = document.createElement("button");
 	hamburger.className = "hamburger";
+	hamburger.setAttribute("aria-label", "Menu");
 	hamburger.innerHTML = "<span></span><span></span><span></span>";
 
 	const nav = document.querySelector(".nav-wrapper");
@@ -301,11 +303,107 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
+	// Close menu when clicking a link
+	navLinks.querySelectorAll("a").forEach((link) => {
+		link.addEventListener("click", () => {
+			navLinks.classList.remove("active");
+			hamburger.classList.remove("active");
+		});
+	});
+
 	// Close menu when window is resized
 	window.addEventListener("resize", function () {
-		if (window.innerWidth > 992) {
+		if (window.innerWidth > 768) {
 			navLinks.classList.remove("active");
 			hamburger.classList.remove("active");
 		}
 	});
+});
+
+// Character cards scroll functionality
+document.addEventListener("DOMContentLoaded", function () {
+	const cardContainer = document.querySelector(".character-cards");
+	const prevButton = document.querySelector(".scroll-btn.scroll-left");
+	const nextButton = document.querySelector(".scroll-btn.scroll-right");
+	const cardWidth = 300; // Width of each card + gap
+	const scrollAmount = cardWidth * 3; // Scroll 3 cards at a time
+
+	// Function to scroll cards
+	function scrollCards(direction) {
+		const currentScroll = cardContainer.scrollLeft;
+		const newScroll =
+			direction === "next" ? currentScroll + scrollAmount : currentScroll - scrollAmount;
+
+		cardContainer.scrollTo({
+			left: newScroll,
+			behavior: "smooth",
+		});
+
+		// Update button states
+		updateScrollButtons();
+	}
+
+	// Function to update button states
+	function updateScrollButtons() {
+		const isAtStart = cardContainer.scrollLeft === 0;
+		const isAtEnd =
+			cardContainer.scrollLeft + cardContainer.clientWidth >= cardContainer.scrollWidth - 1;
+
+		prevButton.style.opacity = isAtStart ? "0.5" : "1";
+		prevButton.style.cursor = isAtStart ? "not-allowed" : "pointer";
+		nextButton.style.opacity = isAtEnd ? "0.5" : "1";
+		nextButton.style.cursor = isAtEnd ? "not-allowed" : "pointer";
+	}
+
+	// Add click event listeners
+	prevButton.addEventListener("click", () => {
+		if (cardContainer.scrollLeft > 0) {
+			scrollCards("prev");
+		}
+	});
+
+	nextButton.addEventListener("click", () => {
+		if (cardContainer.scrollLeft + cardContainer.clientWidth < cardContainer.scrollWidth) {
+			scrollCards("next");
+		}
+	});
+
+	// Add touch scroll functionality
+	let isDown = false;
+	let startX;
+	let scrollLeft;
+
+	cardContainer.addEventListener("mousedown", (e) => {
+		isDown = true;
+		cardContainer.style.cursor = "grabbing";
+		startX = e.pageX - cardContainer.offsetLeft;
+		scrollLeft = cardContainer.scrollLeft;
+	});
+
+	cardContainer.addEventListener("mouseleave", () => {
+		isDown = false;
+		cardContainer.style.cursor = "grab";
+	});
+
+	cardContainer.addEventListener("mouseup", () => {
+		isDown = false;
+		cardContainer.style.cursor = "grab";
+	});
+
+	cardContainer.addEventListener("mousemove", (e) => {
+		if (!isDown) return;
+		e.preventDefault();
+		const x = e.pageX - cardContainer.offsetLeft;
+		const walk = (x - startX) * 2;
+		cardContainer.scrollLeft = scrollLeft - walk;
+	});
+
+	// Update button states on scroll
+	cardContainer.addEventListener("scroll", updateScrollButtons);
+
+	// Initial button state
+	updateScrollButtons();
+
+	// Update button states on window resize
+	window.addEventListener("resize", updateScrollButtons);
 });

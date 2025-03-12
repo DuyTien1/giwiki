@@ -6,6 +6,7 @@
 		<title>Genshin Impact Wiki</title>
 		<link rel="stylesheet" href="styles/main.css" />
 		<link rel="stylesheet" href="styles/animations.css" />
+		<link rel="stylesheet" href="styles/responsive.css" />
 	</head>
 	<body>
 		<!-- Navigation -->
@@ -132,7 +133,7 @@
 					<div class="highlights-grid">
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/world.png" alt="Open World" class="feature-icon" />
+								<img src="./assets/icons/highlight1.svg" alt="Open World" class="feature-icon" />
 							</div>
 							<h3>Breathtaking Open World</h3>
 							<p>
@@ -143,7 +144,7 @@
 
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/combat.png" alt="Combat" class="feature-icon" />
+								<img src="./assets/icons/highlight2.svg" alt="Combat" class="feature-icon" />
 							</div>
 							<h3>Revolutionary Combat System</h3>
 							<p>
@@ -154,7 +155,7 @@
 
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/story.png" alt="Story" class="feature-icon" />
+								<img src="./assets/icons/highlight3.svg" alt="Story" class="feature-icon" />
 							</div>
 							<h3>Rich Storytelling</h3>
 							<p>
@@ -166,7 +167,7 @@
 						<div class="highlight-card">
 							<div class="highlight-icon">
 								<img
-									src="assets/icons/cross-platform.png"
+									src="./assets/icons/highlight4.svg"
 									alt="Cross Platform"
 									class="feature-icon"
 								/>
@@ -180,7 +181,7 @@
 
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/music.png" alt="Music" class="feature-icon" />
+								<img src="./assets/icons/highlight5.svg" alt="Music" class="feature-icon" />
 							</div>
 							<h3>Award-Winning Soundtrack</h3>
 							<p>
@@ -191,7 +192,7 @@
 
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/updates.png" alt="Updates" class="feature-icon" />
+								<img src="./assets/icons/highlight6.svg" alt="Updates" class="feature-icon" />
 							</div>
 							<h3>Regular Content Updates</h3>
 							<p>
@@ -202,7 +203,7 @@
 
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/community.png" alt="Community" class="feature-icon" />
+								<img src="./assets/icons/highlight7.svg" alt="Community" class="feature-icon" />
 							</div>
 							<h3>Vibrant Community</h3>
 							<p>
@@ -213,7 +214,7 @@
 
 						<div class="highlight-card">
 							<div class="highlight-icon">
-								<img src="assets/icons/exploration.png" alt="Exploration" class="feature-icon" />
+								<img src="./assets/icons/highlight8.svg" alt="Exploration" class="feature-icon" />
 							</div>
 							<h3>Rewarding Exploration</h3>
 							<p>
@@ -227,13 +228,14 @@
 
 			<section id="characters" class="section">
 				<h2>Featured Characters</h2>
+				<!-- Message for mobile users -->
 				<div class="character-slider-container">
 					<div class="character-slider">
 						<div class="character-slide">
 							<img src="./assets/characters/raidenshogun.jpg" alt="Raiden Shogun" />
 							<div class="character-info">
 								<div class="character-element electro">
-									<img src="./assets/elements/eletro.png" alt="Electro" />
+									<img src="./assets/elements/electro.png" alt="Electro" />
 								</div>
 								<h3>Raiden Shogun</h3>
 								<p class="character-title">The Electro Archon</p>
@@ -287,7 +289,6 @@
 			<section id="blog" class="section blog-section">
 				<div class="blog-container">
 					<h2>Latest Updates & Guides</h2>
-
 					<div class="blog-categories">
 						<button class="category-btn active" data-category="all">All</button>
 						<button class="category-btn" data-category="news">Latest News</button>
@@ -299,7 +300,7 @@
 						<!-- Latest News -->
 						<article class="blog-card news">
 							<div class="blog-image">
-								<img src="./assets/blog/version-update.jpg" alt="Version 4.5 Update" />
+								<img src="./assets/images/blog1.jpg" alt="Version 4.5 Update" />
 								<span class="blog-tag">News</span>
 							</div>
 							<div class="blog-content">
@@ -316,7 +317,7 @@
 						<!-- Beginner Guide -->
 						<article class="blog-card guides">
 							<div class="blog-image">
-								<img src="./assets/blog/beginner-guide.jpg" alt="Beginner's Guide" />
+								<img src="./assets/images/blog2.jpg" alt="Beginner's Guide" />
 								<span class="blog-tag">Guide</span>
 							</div>
 							<div class="blog-content">
@@ -333,7 +334,7 @@
 						<!-- Character Build -->
 						<article class="blog-card builds">
 							<div class="blog-image">
-								<img src="./assets/blog/raiden-build.jpg" alt="Raiden Shogun Build" />
+								<img src="./assets/images/blog3.jpg" alt="Raiden Shogun Build" />
 								<span class="blog-tag">Build</span>
 							</div>
 							<div class="blog-content">
@@ -349,7 +350,7 @@
 						<!-- Quick Tips -->
 						<article class="blog-card guides">
 							<div class="blog-image">
-								<img src="./assets/blog/daily-tips.jpg" alt="Daily Tasks Guide" />
+								<img src="./assets/images/blog4.jpg" alt="Daily Tasks Guide" />
 								<span class="blog-tag">Guide</span>
 							</div>
 							<div class="blog-content">
@@ -365,7 +366,7 @@
 						<!-- Add these two new articles -->
 						<article class="blog-card builds">
 							<div class="blog-image">
-								<img src="./assets/blog/ayaka-build.jpg" alt="Ayaka Build Guide" />
+								<img src="./assets/images/blog5.jpg" alt="Ayaka Build Guide" />
 								<span class="blog-tag">Build</span>
 							</div>
 							<div class="blog-content">
@@ -381,7 +382,7 @@
 
 						<article class="blog-card news">
 							<div class="blog-image">
-								<img src="./assets/blog/event-guide.jpg" alt="Current Events" />
+								<img src="./assets/images/blog6.jpg" alt="Current Events" />
 								<span class="blog-tag">News</span>
 							</div>
 							<div class="blog-content">
@@ -449,7 +450,493 @@
 					<div class="character-cards-container">
 						<button class="scroll-btn scroll-left">❮</button>
 						<div class="character-cards">
-							<!-- Cards will be populated by JavaScript -->
+							<div class="character-card" data-element="anemo">
+								<div class="character-card-image">
+									<img src="./assets/cards/venti.png" alt="Venti" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/anemo.png" alt="Anemo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Venti</h3>
+									<p>Nhà Thơ Có Màu Của Gió</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Cung</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="geo">
+								<div class="character-card-image">
+									<img src="./assets/cards/zhongli.png" alt="Zhongli" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/geo.png" alt="Geo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Zhongli</h3>
+									<p>Du Ngoạn Trần Thế</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Vũ Khí Cán Dài</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="electro">
+								<div class="character-card-image">
+									<img src="./assets/cards/shogun.png" alt="Raiden Shogun" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/electro.png" alt="Electro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Raiden Shogun</h3>
+									<p>Nhất Tâm Tịnh Thổ</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Vũ Khí Cán Dài</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="dendro">
+								<div class="character-card-image">
+									<img src="./assets/cards/nahida.png" alt="Nahida" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/dendro.png" alt="Dendro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Nahida</h3>
+									<p>Kết Tinh Bạch Thảo</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Pháp Khí</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/mavuika.png" alt="Mavuika" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Mavuika</h3>
+									<p>Lửa Thiêu Đêm Đen</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Trọng Kiếm</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="anemo">
+								<div class="character-card-image">
+									<img src="./assets/cards/jean.png" alt="Jean" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/anemo.png" alt="Anemo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Jean</h3>
+									<p>Kỵ Sĩ Bồ Công Anh</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="electro">
+								<div class="character-card-image">
+									<img src="./assets/cards/keqing.png" alt="Keqing" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/electro.png" alt="Electro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Keqing</h3>
+									<p>Sấm Chớp Trước Cơn Mưa</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="character-card" data-element="cryo">
+								<div class="character-card-image">
+									<img src="./assets/cards/ayaka.png" alt="Ayaka" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/cryo.png" alt="Cryo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Kamisato Ayaka</h3>
+									<p>Bạch Hạc Sương Hoa</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="dendro">
+								<div class="character-card-image">
+									<img src="./assets/cards/tighnari.png" alt="Tighnari" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/dendro.png" alt="Dendro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Tighnari</h3>
+									<p>Dạo Bước Rừng Xanh</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Cung</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="hydro">
+								<div class="character-card-image">
+									<img src="./assets/cards/neuvillette.png" alt="Neuvillette" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/hydro.png" alt="Hydro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Neuvillette</h3>
+									<p>Tiếng Sóng Phán Quyết</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Pháp Khí</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/diluc.png" alt="Diluc" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Diluc</h3>
+									<p>Mặt Tối Của Bình Minh</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Trọng Kiếm</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="electro">
+								<div class="character-card-image">
+									<img src="./assets/cards/yaemiko.png" alt="Yae Miko" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/electro.png" alt="Electro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Yae Miko</h3>
+									<p>Tiếu Ngạo Thế Gian</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Pháp Khí</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="hydro">
+								<div class="character-card-image">
+									<img src="./assets/cards/nilou.png" alt="Nilou" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/hydro.png" alt="Hydro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Nilou</h3>
+									<p>Vũ Điệu Ánh Sen</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="cryo">
+								<div class="character-card-image">
+									<img src="./assets/cards/wriothesley.png" alt="Wriothesley" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/cryo.png" alt="Cryo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Wriothesley</h3>
+									<p>Sứ Giả Tội Danh Ẩn Mật</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Pháp Khí</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="geo">
+								<div class="character-card-image">
+									<img src="./assets/cards/albedo.png" alt="Albedo" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/geo.png" alt="Geo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Albedo</h3>
+									<p>Kreideprinz</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="cryo">
+								<div class="character-card-image">
+									<img src="./assets/cards/eula.png" alt="Eula" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/cryo.png" alt="Cryo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Eula</h3>
+									<p>Vũ Điệu Bọt Biển</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Trọng Kiếm</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/benneet.png" alt="Bennett" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Bennett</h3>
+									<p>Thử Thách Của Vận Mệnh</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="hydro">
+								<div class="character-card-image">
+									<img src="./assets/cards/tartaglia.png" alt="Tartaglia" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/hydro.png" alt="Hydro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Tartaglia</h3>
+									<p>Childe</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Cung</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="hydro">
+								<div class="character-card-image">
+									<img src="./assets/cards/yelan.png" alt="Yelan" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/hydro.png" alt="Hydro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Yelan</h3>
+									<p>Lan Sinh U Cốc</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Cung</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="anemo">
+								<div class="character-card-image">
+									<img src="./assets/cards/xianyun.png" alt="Xianyun" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/anemo.png" alt="Anemo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Xianyun</h3>
+									<p>Hạc Sứ Cõi Tiên</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Pháp Khí</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/gaming.png" alt="Gaming" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Gaming</h3>
+									<p>Tuấn Nghê Ngẩng Đầu</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Trọng Kiếm</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="anemo">
+								<div class="character-card-image">
+									<img src="./assets/cards/kazuha.png" alt="Kaedehara Kazuha" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/anemo.png" alt="Anemo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Kaedehara Kazuha</h3>
+									<p>Lá Đỏ Đuổi Sóng</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/thoma.png" alt="Thoma" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Thoma</h3>
+									<p>Người Bảo Vệ Phương Xa</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐</span>
+										<span class="weapon-type">Vũ Khí Cán Dài</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/shinobu.png" alt="Kuki Shinobu" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Kuki Shinobu</h3>
+									<p>Gạt Bỏ Phiền Não</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="anemo">
+								<div class="character-card-image">
+									<img src="./assets/cards/wanderer.png" alt="Wanderer" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/anemo.png" alt="Anemo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Wanderer</h3>
+									<p>Đoạn Tuyệt Thế Gian</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Pháp Khí</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="dendro">
+								<div class="character-card-image">
+									<img src="./assets/cards/alhaitham.png" alt="Alhaitham" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/dendro.png" alt="Dendro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Alhaitham</h3>
+									<p>Lời Khuyên Tận Tình</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Kiếm Đơn</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="dendro">
+								<div class="character-card-image">
+									<img src="./assets/cards/collei.png" alt="Collei" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/dendro.png" alt="Dendro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Collei</h3>
+									<p>Mầm Non Tái Sinh</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐</span>
+										<span class="weapon-type">Cung</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="geo">
+								<div class="character-card-image">
+									<img src="./assets/cards/navia.png" alt="Navia" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/geo.png" alt="Geo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Navia</h3>
+									<p>Bánh Lái Hoa Lệ</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Trọng Kiếm</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="pyro">
+								<div class="character-card-image">
+									<img src="./assets/cards/arlecchino.png" alt="Arlecchino" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/pyro.png" alt="Pyro" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Arlecchino</h3>
+									<p>Vầng Trăng Tai Họa</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐⭐</span>
+										<span class="weapon-type">Vũ Khí Cán Dài</span>
+									</div>
+								</div>
+							</div>
+							<div class="character-card" data-element="anemo">
+								<div class="character-card-image">
+									<img src="./assets/cards/lynette.png" alt="Lynette" loading="lazy" />
+									<div class="character-element">
+										<img src="./assets/elements/anemo.png" alt="Anemo" />
+									</div>
+								</div>
+								<div class="character-card-info">
+									<h3>Lynette</h3>
+									<p>Bóng Hình Trang Nhã</p>
+									<div class="character-rating">
+										<span class="stars">⭐⭐⭐⭐</span>
+										<span class="weapon-type">Cung</span>
+									</div>
+								</div>
+							</div>
 						</div>
 						<button class="scroll-btn scroll-right">❯</button>
 					</div>
@@ -462,7 +949,7 @@
 					<h2>About Us</h2>
 					<div class="about-content">
 						<div class="about-image">
-							<img src="./assets/about/team-banner.jpg" alt="Our Team" />
+							<img src="./assets/images/our-team.jpg" alt="Our Team" />
 						</div>
 						<div class="about-text">
 							<h3>Dedicated to the Genshin Community</h3>
@@ -667,8 +1154,6 @@
 				</div>
 			</div>
 		</footer>
-
-		<!-- Add this before </body> -->
 		<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">
 			<span class="arrow-up">↑</span>
 		</button>
